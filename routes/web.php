@@ -11,8 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get(
+    '/', function () {
+        return view('welcome');
+    }
+);
 
-Route::resource('products','ProductController');
+Route::resource('products', 'ProductController');

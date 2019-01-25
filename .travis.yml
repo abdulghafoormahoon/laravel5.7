@@ -22,4 +22,5 @@ before_script:
   - npm install
   
 script:
-  - vendor/bin/phpunit --coverage-text
+  - vendor/bin/phpunit --coverage-html
+  - vendor/bin/phpcs ./app/http
